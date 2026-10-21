@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.musicflow.tests">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="35" />
+    <application android:label="MusicFlow verification" />
+    <instrumentation android:name="com.musicflow.tests.AudioSmoke" android:targetPackage="com.musicflow.app" android:label="Background playback verification" />
+</manifest>

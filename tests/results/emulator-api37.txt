@@ -1,0 +1,22 @@
+PASS: Bundled audio prepared with correct duration
+PASS: Playback continues after Activity is minimized
+PASS: Audio position advances in background
+PASS: Pause command holds playback position
+PASS: Native seeking works
+PASS: Native resume advances playback again
+PASS: Stop releases playback service
+PASS: Public artist search returns native results: 20
+PASS: Online song prepared and playing
+METRIC: cold start 10444 ms
+PASS: Online playback advances while minimized
+PASS: Next online song is prepared during current playback
+PASS: Next command uses the prepared song
+METRIC: prepared transition 16 ms
+PASS: Prepared transition starts within 1.2 seconds
+PASS: Repeated resolution reuses the memory cache
+METRIC: cached resolution 0 ms
+PASS: Previous song can replay using cached link: {"error":"","active":true,"track":{"id":"yO-XR4qXm1k","kind":"youtube","title":"Efecto","channel":"Bad Bunny - Topic"},"phase":"","startupMs":38,"nextReady":false,"playing":true,"loading":false,"position":17,"duration":213061,"index":0,"size":2}
+PASS: Pause releases speculative next player
+PASS: Resume prepares the next song again
+PASS: Completion advances automatically to prepared song
+

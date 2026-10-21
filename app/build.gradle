@@ -1,0 +1,13 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.musicflow.app'
+    compileSdk 35
+    defaultConfig { applicationId 'com.musicflow.app'; minSdk 26; targetSdk 35; versionCode 13; versionName '0.13.0' }
+    compileOptions { coreLibraryDesugaringEnabled true; sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'player-libs', include: ['*.jar', '*.aar'])
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs_nio:2.1.5'
+}
